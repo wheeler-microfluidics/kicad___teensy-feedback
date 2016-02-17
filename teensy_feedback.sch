@@ -1,0 +1,378 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:wheelerlab
+LIBS:120-channel pogo pin board-cache
+EELAYER 25 0
+EELAYER END
+$Descr User 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "minibox v2"
+Date "3 dec 2015"
+Rev "1"
+Comp "Ryan Fobel"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+NoConn ~ 5200 3200
+NoConn ~ 5200 1400
+NoConn ~ 5200 1550
+NoConn ~ 5200 1700
+NoConn ~ 5200 1850
+NoConn ~ 5200 2000
+NoConn ~ 5200 2150
+NoConn ~ 5200 2300
+NoConn ~ 5200 2450
+NoConn ~ 5200 2600
+NoConn ~ 5200 2750
+NoConn ~ 5200 2900
+NoConn ~ 5950 3750
+NoConn ~ 6400 3750
+NoConn ~ 6550 3750
+NoConn ~ 7200 3200
+NoConn ~ 7200 2600
+NoConn ~ 7200 2450
+NoConn ~ 7200 2300
+NoConn ~ 7200 2150
+NoConn ~ 7200 2000
+NoConn ~ 7200 1850
+NoConn ~ 7200 1700
+NoConn ~ 7200 1400
+NoConn ~ 7200 1250
+NoConn ~ 5200 3050
+$Comp
+L BNC P1
+U 1 1 56C4D381
+P 1250 1400
+F 0 "P1" H 1260 1520 50  0000 C CNN
+F 1 "BNC" V 1360 1340 50  0000 C CNN
+F 2 "" H 1250 1400 50  0000 C CNN
+F 3 "" H 1250 1400 50  0000 C CNN
+	1    1250 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP6024 IC1
+U 1 1 56C4E8AD
+P 2800 1850
+F 0 "IC1" H 2800 2350 60  0000 C CNN
+F 1 "MCP6024" H 2810 1350 60  0000 C CNN
+F 2 "" H 2800 1850 60  0000 C CNN
+F 3 "" H 2800 1850 60  0000 C CNN
+	1    2800 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 56C4E9DD
+P 1300 2000
+F 0 "R1" V 1380 2000 50  0000 C CNN
+F 1 "10k" V 1300 2000 50  0000 C CNN
+F 2 "" V 1230 2000 50  0000 C CNN
+F 3 "" H 1300 2000 50  0000 C CNN
+	1    1300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 56C4EA72
+P 1300 2300
+F 0 "R2" V 1380 2300 50  0000 C CNN
+F 1 "2.2k" V 1300 2300 50  0000 C CNN
+F 2 "" V 1230 2300 50  0000 C CNN
+F 3 "" H 1300 2300 50  0000 C CNN
+F 4 "RC1206FR-072K2L" H 1300 2300 60  0001 C CNN "Mfg_Part_No"
+	1    1300 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 1600 2450 2    60   Input ~ 0
+GND
+Text GLabel 1300 1850 2    60   Input ~ 0
++3.3V
+Text GLabel 7200 1550 2    60   Input ~ 0
++3.3V
+Text GLabel 6100 3750 3    60   Input ~ 0
++3.3V
+Text GLabel 5200 1250 0    60   Input ~ 0
+GND
+Text GLabel 6250 3750 3    60   Input ~ 0
+GND
+Text GLabel 7200 3050 2    60   Input ~ 0
+A0
+$Comp
+L C C2
+U 1 1 56C4ECB4
+P 1600 2300
+F 0 "C2" H 1625 2400 50  0000 L CNN
+F 1 "C" H 1750 2300 50  0000 L CNN
+F 2 "" H 1638 2150 50  0000 C CNN
+F 3 "" H 1600 2300 50  0000 C CNN
+	1    1600 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 2450 1600 2450
+Connection ~ 1300 2150
+Wire Wire Line
+	2150 2050 2150 2150
+$Comp
+L R R3
+U 1 1 56C4F031
+P 2000 1400
+F 0 "R3" V 2080 1400 50  0000 C CNN
+F 1 "200" V 2000 1400 50  0000 C CNN
+F 2 "" V 1930 1400 50  0000 C CNN
+F 3 "" H 2000 1400 50  0000 C CNN
+F 4 "RC1206FR-07200RL" H 2000 1400 60  0001 C CNN "Mfg_Part_No"
+	1    2000 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1150 2150 1550
+$Comp
+L C C3
+U 1 1 56C4F0A2
+P 1800 1400
+F 0 "C3" H 1825 1500 50  0000 L CNN
+F 1 "C" H 1800 1250 50  0000 L CNN
+F 2 "" H 1838 1250 50  0000 C CNN
+F 3 "" H 1800 1400 50  0000 C CNN
+	1    1800 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1150 1100 1400
+Wire Wire Line
+	1650 1650 2150 1650
+Wire Wire Line
+	1800 1550 1800 1650
+Connection ~ 1800 1650
+Wire Wire Line
+	2000 1550 2000 1650
+Connection ~ 2000 1650
+Wire Wire Line
+	1650 1650 1650 1150
+Wire Wire Line
+	1800 1250 1800 1150
+Connection ~ 1800 1150
+Wire Wire Line
+	2000 1250 2000 1150
+Connection ~ 2000 1150
+Wire Wire Line
+	1800 1150 4550 1150
+Text GLabel 1250 1600 0    60   Input ~ 0
+GND
+Text GLabel 2150 1850 0    60   Input ~ 0
++3.3V
+Text GLabel 3450 1850 2    60   Input ~ 0
+GND
+Wire Wire Line
+	1300 2150 1600 2150
+Wire Wire Line
+	1600 2150 1600 1950
+Wire Wire Line
+	1600 1950 2150 1950
+Text GLabel 2150 2150 0    60   Input ~ 0
++0.6V
+Text GLabel 2150 1750 0    60   Input ~ 0
++0.6V
+$Comp
+L C C1
+U 1 1 56C4FA96
+P 1500 1150
+F 0 "C1" H 1525 1250 50  0000 L CNN
+F 1 "C" H 1500 1000 50  0000 L CNN
+F 2 "" H 1538 1000 50  0000 C CNN
+F 3 "" H 1500 1150 50  0000 C CNN
+	1    1500 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 1150 1100 1150
+$Comp
+L R R4
+U 1 1 56C4DF9D
+P 4100 1650
+F 0 "R4" V 4180 1650 50  0000 C CNN
+F 1 "R" V 4100 1650 50  0000 C CNN
+F 2 "" V 4030 1650 30  0000 C CNN
+F 3 "" H 4100 1650 30  0000 C CNN
+	1    4100 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 56C4DFE0
+P 4400 1650
+F 0 "R6" V 4480 1650 50  0000 C CNN
+F 1 "R" V 4400 1650 50  0000 C CNN
+F 2 "" V 4330 1650 30  0000 C CNN
+F 3 "" H 4400 1650 30  0000 C CNN
+	1    4400 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L C C5
+U 1 1 56C4E019
+P 3900 1850
+F 0 "C5" H 3925 1950 50  0000 L CNN
+F 1 "C" H 3925 1750 50  0000 L CNN
+F 2 "" H 3938 1700 30  0000 C CNN
+F 3 "" H 3900 1850 60  0000 C CNN
+	1    3900 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C4
+U 1 1 56C4E097
+P 3850 1300
+F 0 "C4" H 3875 1400 50  0000 L CNN
+F 1 "C" H 3875 1200 50  0000 L CNN
+F 2 "" H 3888 1150 30  0000 C CNN
+F 3 "" H 3850 1300 60  0000 C CNN
+	1    3850 1300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 1650 3950 1650
+Wire Wire Line
+	3900 1650 3900 1700
+Connection ~ 3900 1650
+Wire Wire Line
+	4250 1300 4250 1650
+Wire Wire Line
+	4000 1300 4250 1300
+Wire Wire Line
+	3450 1300 3450 1650
+Connection ~ 3450 1550
+Text GLabel 3900 2000 2    60   Input ~ 0
+GND
+Connection ~ 2150 1150
+Text GLabel 7200 2900 2    60   Input ~ 0
+A1
+Wire Wire Line
+	3450 1300 3700 1300
+Wire Wire Line
+	4550 1150 4550 1650
+Text GLabel 3450 1750 2    60   Input ~ 0
++0.6V
+$Comp
+L R R5
+U 1 1 56C4EB09
+P 4150 2550
+F 0 "R5" V 4230 2550 50  0000 C CNN
+F 1 "R" V 4150 2550 50  0000 C CNN
+F 2 "" V 4080 2550 30  0000 C CNN
+F 3 "" H 4150 2550 30  0000 C CNN
+	1    4150 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R7
+U 1 1 56C4EB0F
+P 4450 2550
+F 0 "R7" V 4530 2550 50  0000 C CNN
+F 1 "R" V 4450 2550 50  0000 C CNN
+F 2 "" V 4380 2550 30  0000 C CNN
+F 3 "" H 4450 2550 30  0000 C CNN
+	1    4450 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L C C7
+U 1 1 56C4EB15
+P 3950 2750
+F 0 "C7" H 3975 2850 50  0000 L CNN
+F 1 "C" H 3975 2650 50  0000 L CNN
+F 2 "" H 3988 2600 30  0000 C CNN
+F 3 "" H 3950 2750 60  0000 C CNN
+	1    3950 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C6
+U 1 1 56C4EB1B
+P 3900 2200
+F 0 "C6" H 3925 2300 50  0000 L CNN
+F 1 "C" H 3925 2100 50  0000 L CNN
+F 2 "" H 3938 2050 30  0000 C CNN
+F 3 "" H 3900 2200 60  0000 C CNN
+	1    3900 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3500 2550 4000 2550
+Wire Wire Line
+	3950 2550 3950 2600
+Connection ~ 3950 2550
+Wire Wire Line
+	4300 2200 4300 2550
+Wire Wire Line
+	4050 2200 4300 2200
+Text GLabel 3950 2900 2    60   Input ~ 0
+GND
+Text GLabel 3450 1950 2    60   Input ~ 0
++0.6V
+Wire Wire Line
+	3450 2050 3450 2150
+Wire Wire Line
+	3450 2050 3500 2050
+Wire Wire Line
+	3500 2050 3500 2550
+Text GLabel 3450 1450 2    60   Input ~ 0
+A1
+Text GLabel 2450 1150 1    60   Input ~ 0
+A0
+Wire Wire Line
+	3750 2200 3650 2200
+Wire Wire Line
+	3650 2200 3650 2550
+Connection ~ 3650 2550
+Text GLabel 4600 2550 2    60   Input ~ 0
+A1
+Text GLabel 3500 2550 0    60   Input ~ 0
+A2
+$Comp
+L Teensy_3.1 U2
+U 1 1 5660ABAB
+P 6200 2550
+F 0 "U2" H 6250 3600 60  0000 C CNN
+F 1 "Teensy_3.1" H 6300 4050 60  0000 C CNN
+F 2 "footprints:Teensy-3-1" H 6300 2550 60  0001 C CNN
+F 3 "" H 6300 2550 60  0000 C CNN
+	1    6200 2550
+	1    0    0    -1  
+$EndComp
+Text GLabel 7200 2750 2    60   Input ~ 0
+A2
+$EndSCHEMATC
