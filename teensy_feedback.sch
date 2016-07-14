@@ -44,42 +44,38 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-NoConn ~ 5200 3200
-NoConn ~ 5200 1400
-NoConn ~ 5200 1550
-NoConn ~ 5200 1700
-NoConn ~ 5200 1850
-NoConn ~ 5200 2000
-NoConn ~ 5200 2150
-NoConn ~ 5200 2300
-NoConn ~ 5200 2450
-NoConn ~ 5200 2600
-NoConn ~ 5200 2750
-NoConn ~ 5200 2900
-NoConn ~ 5950 3750
-NoConn ~ 6400 3750
-NoConn ~ 6550 3750
-NoConn ~ 7200 3200
-NoConn ~ 7200 2600
-NoConn ~ 7200 2450
-NoConn ~ 7200 2300
-NoConn ~ 7200 2150
-NoConn ~ 7200 2000
-NoConn ~ 7200 1850
-NoConn ~ 7200 1700
-NoConn ~ 7200 1400
-NoConn ~ 7200 1250
-NoConn ~ 5200 3050
+NoConn ~ 5250 3500
+NoConn ~ 5250 2300
+NoConn ~ 5250 2450
+NoConn ~ 5250 2600
+NoConn ~ 5250 2750
+NoConn ~ 5250 2900
+NoConn ~ 5250 3050
+NoConn ~ 5250 3200
+NoConn ~ 6000 4050
+NoConn ~ 6450 4050
+NoConn ~ 6600 4050
+NoConn ~ 7250 3500
+NoConn ~ 7250 2900
+NoConn ~ 7250 2750
+NoConn ~ 7250 2600
+NoConn ~ 7250 2450
+NoConn ~ 7250 2300
+NoConn ~ 7250 2150
+NoConn ~ 7250 2000
+NoConn ~ 7250 1700
+NoConn ~ 7250 1550
+NoConn ~ 5250 3350
 $Comp
 L BNC P1
 U 1 1 56C4D381
-P 1250 1400
-F 0 "P1" H 1260 1520 50  0000 C CNN
-F 1 "FEEDBACK" H 1450 1250 50  0000 C CNN
-F 2 "footprints:JACK_SMA" H 1250 1400 50  0001 C CNN
-F 3 "" H 1250 1400 50  0000 C CNN
-	1    1250 1400
-	1    0    0    -1  
+P 950 1450
+F 0 "P1" H 960 1570 50  0000 C CNN
+F 1 "FEEDBACK" H 1150 1300 50  0000 C CNN
+F 2 "footprints:JACK_SMA" H 950 1450 50  0001 C CNN
+F 3 "" H 950 1450 50  0000 C CNN
+	1    950  1450
+	-1   0    0    -1  
 $EndComp
 $Comp
 L MCP6024 IC1
@@ -119,15 +115,11 @@ Text GLabel 1600 2450 2    60   Input ~ 0
 GND
 Text GLabel 1300 1850 2    60   Input ~ 0
 +3.3V
-Text GLabel 7200 1550 2    60   Input ~ 0
+Text GLabel 7250 1850 2    60   Input ~ 0
 +3.3V
-Text GLabel 6100 3750 3    60   Input ~ 0
-+3.3V
-Text GLabel 5200 1250 0    60   Input ~ 0
+Text GLabel 5250 1550 0    60   Input ~ 0
 GND
-Text GLabel 6250 3750 3    60   Input ~ 0
-GND
-Text GLabel 7200 3050 2    60   Input ~ 0
+Text GLabel 7250 3350 2    60   Input ~ 0
 A0
 $Comp
 L C C2
@@ -171,8 +163,6 @@ F 3 "" H 1800 1400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1100 1150 1100 1400
-Wire Wire Line
 	1650 1650 2150 1650
 Wire Wire Line
 	1800 1550 1800 1650
@@ -181,8 +171,6 @@ Wire Wire Line
 	2000 1550 2000 1650
 Connection ~ 2000 1650
 Wire Wire Line
-	1650 1650 1650 1150
-Wire Wire Line
 	1800 1250 1800 1150
 Connection ~ 1800 1150
 Wire Wire Line
@@ -190,7 +178,7 @@ Wire Wire Line
 Connection ~ 2000 1150
 Wire Wire Line
 	1800 1150 4550 1150
-Text GLabel 1250 1600 0    60   Input ~ 0
+Text GLabel 950  1650 2    60   Input ~ 0
 GND
 Text GLabel 2150 1850 0    60   Input ~ 0
 +3.3V
@@ -209,172 +197,129 @@ Text GLabel 2150 1750 0    60   Input ~ 0
 $Comp
 L C C1
 U 1 1 56C4FA96
-P 1500 1150
-F 0 "C1" H 1525 1250 50  0000 L CNN
-F 1 "1uF" V 1350 1150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 1538 1000 50  0001 C CNN
-F 3 "" H 1500 1150 50  0000 C CNN
-	1    1500 1150
+P 1500 1450
+F 0 "C1" H 1525 1550 50  0000 L CNN
+F 1 "1uF" V 1350 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 1538 1300 50  0001 C CNN
+F 3 "" H 1500 1450 50  0000 C CNN
+	1    1500 1450
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1350 1150 1100 1150
 $Comp
 L R R4
 U 1 1 56C4DF9D
-P 4100 1650
-F 0 "R4" V 4180 1650 50  0000 C CNN
-F 1 "1.91k" V 4100 1650 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 4030 1650 30  0001 C CNN
-F 3 "" H 4100 1650 30  0000 C CNN
-	1    4100 1650
+P 4150 2250
+F 0 "R4" V 4230 2250 50  0000 C CNN
+F 1 "1.91k" V 4150 2250 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4080 2250 30  0001 C CNN
+F 3 "" H 4150 2250 30  0000 C CNN
+	1    4150 2250
 	0    1    1    0   
 $EndComp
 $Comp
 L R R6
 U 1 1 56C4DFE0
-P 4400 1650
-F 0 "R6" V 4480 1650 50  0000 C CNN
-F 1 "806" V 4400 1650 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 4330 1650 30  0001 C CNN
-F 3 "" H 4400 1650 30  0000 C CNN
-	1    4400 1650
+P 4450 2250
+F 0 "R6" V 4530 2250 50  0000 C CNN
+F 1 "806" V 4450 2250 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4380 2250 30  0001 C CNN
+F 3 "" H 4450 2250 30  0000 C CNN
+	1    4450 2250
 	0    1    1    0   
 $EndComp
 $Comp
 L C C5
 U 1 1 56C4E019
-P 3900 1850
-F 0 "C5" H 3925 1950 50  0000 L CNN
-F 1 "1nF" H 3700 1850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 3938 1700 30  0001 C CNN
-F 3 "" H 3900 1850 60  0000 C CNN
-	1    3900 1850
+P 3900 1950
+F 0 "C5" H 3925 2050 50  0000 L CNN
+F 1 "1nF" H 3700 1950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 3938 1800 30  0001 C CNN
+F 3 "" H 3900 1950 60  0000 C CNN
+	1    3900 1950
 	-1   0    0    1   
 $EndComp
 $Comp
 L C C4
 U 1 1 56C4E097
+P 3950 2850
+F 0 "C4" V 4000 2950 50  0000 L CNN
+F 1 "0.15uF" V 3800 2750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 3988 2700 30  0001 C CNN
+F 3 "" H 3950 2850 60  0000 C CNN
+	1    3950 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 1750 3950 1750
+Wire Wire Line
+	3900 1750 3900 1800
+Connection ~ 3900 1750
+Wire Wire Line
+	4250 1300 4250 1750
+Wire Wire Line
+	4000 1300 4250 1300
+Wire Wire Line
+	3450 1300 3450 1650
+Connection ~ 3450 1550
+Connection ~ 2150 1150
+Text GLabel 7250 3200 2    60   Input ~ 0
+A1
+Wire Wire Line
+	3450 1300 3700 1300
+Wire Wire Line
+	4550 1150 4550 1750
+$Comp
+L R R5
+U 1 1 56C4EB09
+P 4100 1750
+F 0 "R5" V 4180 1750 50  0000 C CNN
+F 1 "16.9k" V 4100 1750 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4030 1750 30  0001 C CNN
+F 3 "" H 4100 1750 30  0000 C CNN
+	1    4100 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R7
+U 1 1 56C4EB0F
+P 4400 1750
+F 0 "R7" V 4480 1750 50  0000 C CNN
+F 1 "13.3k" V 4400 1750 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4330 1750 30  0001 C CNN
+F 3 "" H 4400 1750 30  0000 C CNN
+	1    4400 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L C C7
+U 1 1 56C4EB15
+P 3950 2450
+F 0 "C7" H 3975 2550 50  0000 L CNN
+F 1 "1nF" H 3975 2350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 3988 2300 30  0001 C CNN
+F 3 "" H 3950 2450 60  0000 C CNN
+	1    3950 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C6
+U 1 1 56C4EB1B
 P 3850 1300
-F 0 "C4" V 3900 1400 50  0000 L CNN
-F 1 "0.15uF" V 3700 1200 50  0000 L CNN
+F 0 "C6" V 3900 1400 50  0000 L CNN
+F 1 "4.7nF" V 3700 1150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206" H 3888 1150 30  0001 C CNN
 F 3 "" H 3850 1300 60  0000 C CNN
 	1    3850 1300
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3450 1650 3950 1650
-Wire Wire Line
-	3900 1650 3900 1700
-Connection ~ 3900 1650
-Wire Wire Line
-	4250 1300 4250 1650
-Wire Wire Line
-	4000 1300 4250 1300
-Wire Wire Line
-	3450 1300 3450 1650
-Connection ~ 3450 1550
-Text GLabel 3900 2000 2    60   Input ~ 0
-GND
-Connection ~ 2150 1150
-Text GLabel 7200 2900 2    60   Input ~ 0
+	3950 2250 3950 2300
+Text GLabel 3450 1300 0    60   Input ~ 0
 A1
-Wire Wire Line
-	3450 1300 3700 1300
-Wire Wire Line
-	4550 1150 4550 1650
-Text GLabel 3450 1750 2    60   Input ~ 0
-+0.6V
-$Comp
-L R R5
-U 1 1 56C4EB09
-P 4150 2550
-F 0 "R5" V 4230 2550 50  0000 C CNN
-F 1 "16.9k" V 4150 2550 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 4080 2550 30  0001 C CNN
-F 3 "" H 4150 2550 30  0000 C CNN
-	1    4150 2550
-	0    1    1    0   
-$EndComp
-$Comp
-L R R7
-U 1 1 56C4EB0F
-P 4450 2550
-F 0 "R7" V 4530 2550 50  0000 C CNN
-F 1 "13.3k" V 4450 2550 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 4380 2550 30  0001 C CNN
-F 3 "" H 4450 2550 30  0000 C CNN
-	1    4450 2550
-	0    1    1    0   
-$EndComp
-$Comp
-L C C7
-U 1 1 56C4EB15
-P 3950 2750
-F 0 "C7" H 3975 2850 50  0000 L CNN
-F 1 "1nF" H 3975 2650 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 3988 2600 30  0001 C CNN
-F 3 "" H 3950 2750 60  0000 C CNN
-	1    3950 2750
-	-1   0    0    1   
-$EndComp
-$Comp
-L C C6
-U 1 1 56C4EB1B
-P 3900 2200
-F 0 "C6" V 3950 2300 50  0000 L CNN
-F 1 "4.7nF" V 3750 2050 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 3938 2050 30  0001 C CNN
-F 3 "" H 3900 2200 60  0000 C CNN
-	1    3900 2200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3500 2550 4000 2550
-Wire Wire Line
-	3950 2550 3950 2600
-Connection ~ 3950 2550
-Wire Wire Line
-	4300 2200 4300 2550
-Wire Wire Line
-	4050 2200 4300 2200
-Text GLabel 3950 2900 2    60   Input ~ 0
-GND
-Text GLabel 3450 1950 2    60   Input ~ 0
-+0.6V
-Wire Wire Line
-	3450 2050 3450 2150
-Wire Wire Line
-	3450 2050 3500 2050
-Wire Wire Line
-	3500 2050 3500 2550
-Text GLabel 3450 1450 2    60   Input ~ 0
-A2
-Text GLabel 2450 1150 1    60   Input ~ 0
+Text GLabel 2850 1150 1    60   Input ~ 0
 A0
-Wire Wire Line
-	3750 2200 3650 2200
-Wire Wire Line
-	3650 2200 3650 2550
-Connection ~ 3650 2550
-Text GLabel 3500 2550 0    60   Input ~ 0
+Text GLabel 4600 2250 2    60   Input ~ 0
 A1
-Text GLabel 4600 2550 2    60   Input ~ 0
-A2
-$Comp
-L Teensy_3.1 U2
-U 1 1 5660ABAB
-P 6200 2550
-F 0 "U2" H 6250 3600 60  0000 C CNN
-F 1 "Teensy_3.1" H 6300 4050 60  0000 C CNN
-F 2 "footprints:Teensy-3.1" H 6300 2550 60  0001 C CNN
-F 3 "" H 6300 2550 60  0000 C CNN
-	1    6200 2550
-	1    0    0    -1  
-$EndComp
-Text GLabel 7200 2750 2    60   Input ~ 0
-A2
 Text Notes 3600 1100 0    60   ~ 0
 4th-order Chebychev\nLow-pass filter\nfc=11kHz
 $Comp
@@ -394,4 +339,233 @@ Wire Wire Line
 	2150 1850 2700 1850
 Wire Wire Line
 	2700 1850 2700 2450
+Text GLabel 7250 1100 2    60   Input ~ 0
++0.6V
+NoConn ~ 7250 950 
+NoConn ~ 6150 4050
+NoConn ~ 6300 4050
+Text GLabel 7250 1250 2    60   Input ~ 0
+A11
+Wire Wire Line
+	1650 1450 1650 1650
+$Comp
+L Teensy_3.2 U1
+U 1 1 57851A43
+P 6250 2300
+F 0 "U1" H 6250 2300 60  0000 C CNN
+F 1 "Teensy_3.2" H 6250 3750 60  0000 C CNN
+F 2 "footprints:Teensy_3.2" H 6350 1750 60  0000 C CNN
+F 3 "" H 6350 1750 60  0000 C CNN
+	1    6250 2300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7250 3050
+Connection ~ 3950 2250
+Text GLabel 3450 2850 0    60   Input ~ 0
+A11
+Wire Wire Line
+	3650 2250 4000 2250
+Wire Wire Line
+	3650 1950 3450 1950
+Connection ~ 3450 2150
+Wire Wire Line
+	3650 1950 3650 2250
+Text GLabel 3900 2100 2    60   Input ~ 0
++0.6V
+Text GLabel 3950 2600 2    60   Input ~ 0
++0.6V
+Wire Wire Line
+	4300 2250 4300 2850
+Wire Wire Line
+	4300 2850 4100 2850
+Wire Wire Line
+	3450 2850 3800 2850
+Wire Wire Line
+	3450 2050 3450 2850
+$Comp
+L AQW216 U2
+U 1 1 5787F134
+P 1800 4050
+F 0 "U2" H 1800 4400 60  0000 C CNN
+F 1 "AQW216" H 1800 3695 60  0000 C CNN
+F 2 "SMD_Packages:DIP-8_SMD" H 1800 4050 60  0001 C CNN
+F 3 "" H 1800 4050 60  0000 C CNN
+	1    1800 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L AQW216 U3
+U 1 1 5787F1F5
+P 2550 4050
+F 0 "U3" H 2550 4400 60  0000 C CNN
+F 1 "AQW216" H 2550 3695 60  0000 C CNN
+F 2 "SMD_Packages:DIP-8_SMD" H 2550 4050 60  0001 C CNN
+F 3 "" H 2550 4050 60  0000 C CNN
+	1    2550 4050
+	0    1    1    0   
+$EndComp
+Text GLabel 1550 3100 0    60   Input ~ 0
+GND
+Wire Wire Line
+	1550 3100 2600 3100
+Connection ~ 1850 3100
+Connection ~ 2300 3100
+Wire Wire Line
+	1100 1450 1350 1450
+Text GLabel 1250 1450 1    60   Input ~ 12
+CUR_SENSE
+Text GLabel 1550 5050 0    60   Input ~ 12
+CUR_SENSE
+$Comp
+L C C9
+U 1 1 5787FA98
+P 1550 4900
+F 0 "C9" H 1575 5000 50  0000 L CNN
+F 1 "1pF" H 1575 4800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 1588 4750 50  0001 C CNN
+F 3 "" H 1550 4900 50  0000 C CNN
+	1    1550 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C10
+U 1 1 5787FCE4
+P 1850 4900
+F 0 "C10" H 1875 5000 50  0000 L CNN
+F 1 "10pF" H 1875 4800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 1888 4750 50  0001 C CNN
+F 3 "" H 1850 4900 50  0000 C CNN
+	1    1850 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C11
+U 1 1 5787FD16
+P 2300 4900
+F 0 "C11" H 2325 5000 50  0000 L CNN
+F 1 "100pF" H 2325 4800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 2338 4750 50  0001 C CNN
+F 3 "" H 2300 4900 50  0000 C CNN
+	1    2300 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C12
+U 1 1 5787FD41
+P 2600 4900
+F 0 "C12" H 2625 5000 50  0000 L CNN
+F 1 "1nF" H 2625 4800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 2638 4750 50  0001 C CNN
+F 3 "" H 2600 4900 50  0000 C CNN
+	1    2600 4900
+	1    0    0    -1  
+$EndComp
+Text GLabel 2800 4600 2    60   Input ~ 12
+HV
+Wire Wire Line
+	1450 4600 2800 4600
+Wire Wire Line
+	1750 4600 1750 4450
+Wire Wire Line
+	2050 4600 2050 4450
+Connection ~ 1750 4600
+Wire Wire Line
+	2500 4600 2500 4450
+Connection ~ 2050 4600
+Wire Wire Line
+	2800 4600 2800 4450
+Connection ~ 2500 4600
+Wire Wire Line
+	1550 4450 1550 4750
+Wire Wire Line
+	1850 4450 1850 4750
+Wire Wire Line
+	2300 4450 2300 4750
+Wire Wire Line
+	2600 4450 2600 4750
+Wire Wire Line
+	1550 5050 2600 5050
+Connection ~ 1850 5050
+Connection ~ 2300 5050
+$Comp
+L BNC P2
+U 1 1 57880503
+P 1300 4600
+F 0 "P2" H 1310 4720 50  0000 C CNN
+F 1 "HV" H 1500 4450 50  0000 C CNN
+F 2 "footprints:JACK_SMA" H 1300 4600 50  0001 C CNN
+F 3 "" H 1300 4600 50  0000 C CNN
+	1    1300 4600
+	-1   0    0    -1  
+$EndComp
+Text GLabel 1300 4800 0    60   Input ~ 0
+GND
+Text GLabel 5250 1700 0    60   Input ~ 0
+D0
+Text GLabel 5250 1850 0    60   Input ~ 0
+D1
+Text GLabel 5250 2000 0    60   Input ~ 0
+D2
+Text GLabel 5250 2150 0    60   Input ~ 0
+D3
+Text GLabel 1750 3350 1    60   Input ~ 0
+D0
+Text GLabel 2050 3350 1    60   Input ~ 0
+D1
+Text GLabel 2500 3350 1    60   Input ~ 0
+D2
+Text GLabel 2800 3350 1    60   Input ~ 0
+D3
+$Comp
+L R R8
+U 1 1 578840FF
+P 1750 3500
+F 0 "R8" V 1830 3500 50  0000 C CNN
+F 1 "200" V 1750 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 1680 3500 50  0001 C CNN
+F 3 "" H 1750 3500 50  0000 C CNN
+	1    1750 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 57884178
+P 2050 3500
+F 0 "R9" V 2130 3500 50  0000 C CNN
+F 1 "200" V 2050 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 1980 3500 50  0001 C CNN
+F 3 "" H 2050 3500 50  0000 C CNN
+	1    2050 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 578841C3
+P 2500 3500
+F 0 "R10" V 2580 3500 50  0000 C CNN
+F 1 "200" V 2500 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2430 3500 50  0001 C CNN
+F 3 "" H 2500 3500 50  0000 C CNN
+	1    2500 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 578841C9
+P 2800 3500
+F 0 "R11" V 2880 3500 50  0000 C CNN
+F 1 "200" V 2800 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2730 3500 50  0001 C CNN
+F 3 "" H 2800 3500 50  0000 C CNN
+	1    2800 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3100 2600 3650
+Wire Wire Line
+	2300 3650 2300 3100
+Wire Wire Line
+	1850 3650 1850 3100
+Wire Wire Line
+	1550 3650 1550 3100
 $EndSCHEMATC
